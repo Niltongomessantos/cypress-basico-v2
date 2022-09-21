@@ -4,4 +4,4 @@ orbs:
 workflows:
   build:
     jobs:
-      - teste
+      - cypress/run
