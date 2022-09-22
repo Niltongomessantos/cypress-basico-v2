@@ -1,5 +1,7 @@
 /// <reference types="Cypress" />
 
+const { should } = require("chai")
+
 describe('Central de Atendimento ao Cliente TAT', function() {
     beforeEach(function() {
         cy.visit('./src/index.html')
@@ -96,11 +98,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
           .check().should('be.checked')
           .last()
           .uncheck().should('not.be.checked')
-
-
-
-
     })
 
-
+  
   })
